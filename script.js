@@ -22,9 +22,10 @@ const getSum = () => {
     const totalRow = document.createElement("tr");
     totalRow.id = "totalRow";
 
-    // Create a cell that spans across both columns
+    // Create a cell that spans across both columns and add an ID for Cypress test
     const totalCell = document.createElement("td");
     totalCell.colSpan = 2;
+    totalCell.id = "ans"; // Adding ID for Cypress
     totalCell.style.fontWeight = "bold";
     totalCell.style.textAlign = "center";
     totalCell.textContent = `Total Price: Rs ${totalPrice}`;
